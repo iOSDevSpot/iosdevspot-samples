@@ -19,22 +19,24 @@
 //    NSDictionary *pessoa = [[NSDictionary alloc] initWithObjectsAndKeys:@"Fernando",@"nome",@"26",@"idade", nil];
     
     NSDictionary *pessoa = @{@"nome" : @"Fernando", @"idade" : @"26"};
-  
+    
     NSLog(@"%@", pessoa);
-    NSLog(@"%@", [pessoa valueForKey:@"nome"]);
+    NSLog(@"%@", [pessoa objectForKey:@"nome"]);
     
     NSMutableDictionary *carro = [NSMutableDictionary dictionary];
-    [carro setValue:@"Toyota" forKey:@"Marca"];
-    [carro setValue:@"Corolla" forKey:@"Modelo"];
-    [carro setValue:@"1.8" forKey:@"Potencia"];
-
+    [carro setValue:@"Gol" forKey:@"Modelo"];
+    [carro setValue:@"VW" forKey:@"Marca"];
+    
+    NSLog(@"%@", carro);
+    NSLog(@"%@", [carro objectForKey:@"Marca"]);
+    
+    [carro setValue:@"1.6" forKey:@"Potencia"];
+    
     NSLog(@"%@", carro);
     
     [carro removeObjectForKey:@"Marca"];
     
-    NSLog(@"%@", carro);
-    
-    NSLog(@"%@", [carro objectForKey:@"Potencia"]);
+    NSLog(@"%@", carro);    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
