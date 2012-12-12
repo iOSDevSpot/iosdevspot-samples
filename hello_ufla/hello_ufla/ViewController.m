@@ -28,7 +28,6 @@
 
 - (IBAction)helloUFLA {
 
-    
     NSString *message = @"Hello UFLA, Universidade Federal de Labras - MG";
     
     NSLog(@"%@", message);
