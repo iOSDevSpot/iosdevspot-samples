@@ -1,0 +1,14 @@
+
+PODS:
+- AFNetworking (1.1.0)
+- DCKeyValueObjectMapping (1.3)
+
+DEPENDENCIES:
+- AFNetworking
+- DCKeyValueObjectMapping
+
+SPEC CHECKSUMS:
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+  DCKeyValueObjectMapping: c07fc37be0e7235601685716ba63d2f7123fbf42
+
+COCOAPODS: 0.16.0
